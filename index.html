@@ -1,0 +1,389 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Lan_blbsl的个人博客</title>
+	<link rel="shortcut icon" href="images/myfavicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/myfavicon.ico" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='http//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!---strat-slider---->
+	<link rel="stylesheet" type="text/css" href="css/slider.css" />
+	<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+	<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			$('#da-slider').cslider({
+				autoplay: true,
+				bgincrement: 450
+			});
+
+		});
+	</script>
+	<!---//strat-slider---->
+	<!-- start top_js_button -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- start header -->
+	<div class="header_bg">
+		<div class="wrap">
+			<div class="header">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" /> </a>
+				</div>
+				<div class="social-icons">
+					<ul>
+						<li><a href="https://user.qzone.qq.com/551098068" target="_blank"></a></li>
+						<li><a href="https://space.bilibili.com/3493088855067514?spm_id_from=333.1400.0.0" target="_blank"></a></li>
+						<li><a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank"></a></li>
+						<li><a href="https://github.com/lanblbsl" target="_blank"></a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<!--初始页面-->
+	<div class="initial-page">
+		<img src="images/bbb.gif" alt="bbb">
+		<img id="down-arrow" src="images/向下.png" alt="向下">
+	</div>
+	<div class="header_btm">
+		<!-- 这里是header_btm部分的内容，你可以根据实际需求填充 -->
+	</div>
+	<script src="script.js"></script>
+	<!-- start header -->
+	<div class="header_btm">
+		<div class="wrap">
+			<div class="header_sub">
+				<div class="h_menu">
+					<ul>
+						<li class="active"><a href="index.html">主页</a></li>
+						<li><a href="没有.html">关于</a></li>
+						<li><a href="没有.html">更多</a></li>
+						<li><a href="没有.html">没想好</a></li>
+						<li><a href="没有.html">还是没想好</a></li>
+						<li><a href="没有.html">其他</a></li>
+					</ul>
+				</div>
+				<div class="h_search">
+					<form>
+						<input type="text" value="" placeholder="键入以搜索...(这个我还没搞好AwA)">
+						<input type="submit" value="">
+					</form>
+				</div>
+				<div class="menu">
+					<ul>
+						<li class="active"><a href="index.html">主页</a></li>
+						<li><a href="没有.html">关于</a></li>
+						<li><a href="没有.html">更多</a></li>
+						<li><a href="没有.html">没想好</a></li>
+						<li><a href="没有.html">还是没想好</a></li>
+						<li><a href="没有.html">其他内容</a></li>
+					</ul>
+				</div>
+				<div class="search">
+					<form action="/iphone/search.html">
+						<input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+					</form>
+				</div>
+				<div class="sub-head">
+					<ul>
+						<li><a href="#" id="menu">Menu  <span></span></a></li>
+						<li><a href="#" id="search">Search <span></span></a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<script type="text/javascript">
+					$(".menu,.search").hide();
+					$("#menu").click(function () {
+						$(".menu").toggle();
+						$(".search").hide();
+						$("#search").removeClass("active");
+						$("#menu").toggleClass("active");
+					});
+					$("#search").click(function () {
+						$(".search").toggle();
+						$(".menu").hide();
+						$("#menu").removeClass("active");
+						$("#search").toggleClass("active");
+						$(".text").focus();
+					});
+				</script>
+				<script type="text/javascript" src="js/script.js"></script>
+				<div class="clear"></div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<!-- start slider -->
+	<div class="slider_bg">
+		<div class="wrap">
+			<div class="slider">
+				<!---start-da-slider----->
+				<div id="da-slider" class="da-slider">
+					<div class="da-slide">
+						<h2>欢迎来到我的博客</h2>
+						<p>Welcome to my blog</p>
+					</div>
+					<div class="da-slide">
+						<h2>心之所向，素履以往；生如逆旅，一苇以航</h2>
+						<p>Where the heart yearns, one travels with simple shoes; life is like an arduous journey, and one sails with a single reed.</p>
+					</div>
+					<div class="da-slide">
+						<h2>生活或许布满荆棘，但我们怀揣勇气，终将踏出一条繁花之路</h2>
+						<p>Life may be full of thorns, yet with courage in our hearts, we will eventually tread a path full of blooming flowers.</p>
+					</div>
+					<div class="da-slide">
+						<h2>每一步微小的努力，都是在向着璀璨的未来靠近</h2>
+						<p>Every small effort is a step closer to the bright future.</p>
+					</div>
+					<nav class="da-arrows">
+						<span class="da-arrows-prev"></span>
+						<span class="da-arrows-next"></span>
+					</nav>
+				</div>
+				<!---//End-da-slider----->
+			</div>
+		</div>
+	</div>
+	<!-- start main -->
+	<div class="wrap">
+		<div class="main">
+			<div class="main_text">
+				<h2>百围之木，<span>始于勾萌</span> 万里之途， <span>起于跬步</span></h2>
+				<p class="para">"没有等出来的成功，只有干出来的精彩。人间值得，每一个打拼的你更值得"</p>
+				<p>There is no waiting for success, only the wonderfulness of drying. The world is worth it, and every hard work you are more worthwhile</p>
+			</div>
+			<!-- start grids_of_3 -->
+			<div class="grids_of_3">
+				<div class="grid1_of_3">
+					<img src="images/icon1.png" alt="" />
+					<h3><a href="kugou.html">》我的酷狗《<span>Ｏ(≧▽≦)Ｏ</span> </a></h3>
+					<p>精神！(((o(*ﾟ▽ﾟ*)o)))♡</p>
+				</div>
+				<div class="grid1_of_3">
+					<img src="images/icon2.png" alt="" />
+					<h3><a href="https://space.bilibili.com/3493088855067514?spm_id_from=333.1400.0.0">》我的B站《<span>(*･ω< ) </span> </a></h3>
+					<p>ヾヾ( ˘ ³˘人)ヾ考的全会   ٩(*Ӧ)و写的全对</p>
+				</div>
+				<div class="grid1_of_3">
+					<img src="images/icon3.png" alt="" />
+					<h3><a href="https://qm.qq.com/q/laPOGobVBu">》我的QQ《<span>(￣▽￣)／ </span> </a></h3>
+					<p>(҂‾ ▵‾)σ(˚▽˚’!)/随叫随到</p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!-- end grids_of_3 -->
+		</div>
+	</div>
+	<!-- start main_bg -->
+	<div class="main_bg">
+		<div class="wrap">
+			<div class="main content_top">
+				<!-- start span_of_3 -->
+				<div class="span_of_3">
+					<div class="span1_of_3">
+						<a href="没有.html"><img src="images/pic1.png" alt="" /></a>
+						<div class="span1_of_3_text">
+							<h3><a href="没有.html">我来占个位置awa</a></h3>
+							<p>我也来占个位置\（￣︶￣）/ </p>
+						</div>
+					</div>
+					<div class="span1_of_3">
+						<a href="没有.html"><img src="images/pic2.png" alt="" /></a>
+						<div class="span1_of_3_text">
+							<h3><a href="没有.html">我来占个位置awa</a></h3>
+							<p>我也来占个位置\（￣︶￣）/ </p>
+						</div>
+					</div>
+					<div class="span1_of_3">
+						<a href="没有.html"><img src="images/pic3.png" alt="" /></a>
+						<div class="span1_of_3_text">
+							<h3><a href="没有.html">我来占个位置awa</a></h3>
+							<p>我也来占个位置\（￣︶￣）/ </p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--  -->
+				<div class="span_of_3">
+					<div class="span1_of_3">
+						<a href="没有.html"><img src="images/pic4.png" alt="" /></a>
+						<div class="span1_of_3_text">
+							<h3><a href="没有.html">我来占个位置awa</a></h3>
+							<p>我也来占个位置\（￣︶￣）/ </p>
+						</div>
+					</div>
+					<div class="span1_of_3">
+						<a href="没有.html"><img src="images/pic5.png" alt="" /></a>
+						<div class="span1_of_3_text">
+							<h3><a href="没有.html">我来占个位置awa</a></h3>
+							<p>我也来占个位置\（￣︶￣）/ </p>
+						</div>
+					</div>
+					<div class="span1_of_3">
+						<a href="Newyear/index.html"><img src="images/pic6.png" alt="" /></a>
+						<div class="span1_of_3_text">
+							<h3><a href="Newyear/index.html">》新年快乐哦《</a></h3>
+							<p>2025年快乐！祝你学业有成，阖家欢乐</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- end grids_of_3 -->
+			</div>
+		</div>
+	</div>
+	<div class="wrap">
+		<ul id="flexiselDemo3">
+			<li><img src="images/client1.png" /></li>
+			<li><img src="images/client6.png" /></li>
+			<li><img src="images/client2.png" /></li>
+			<li><img src="images/client5.png" /></li>
+			<li><img src="images/client4.png" /></li>
+			<li><img src="images/client3.png" /></li>
+			<li><img src="images/client4.png" /></li>
+		</ul>
+		<script type="text/javascript">
+			$(window).load(function () {
+				$("#flexiselDemo1").flexisel();
+				$("#flexiselDemo2").flexisel({
+					enableResponsiveBreakpoints: true,
+					responsiveBreakpoints: {
+						portrait: {
+							changePoint: 480,
+							visibleItems: 1
+						},
+						landscape: {
+							changePoint: 640,
+							visibleItems: 2
+						},
+						tablet: {
+							changePoint: 768,
+							visibleItems: 3
+						}
+					}
+				});
+
+				$("#flexiselDemo3").flexisel({
+					visibleItems: 5,
+					animationSpeed: 1000,
+					autoPlay: true,
+					autoPlaySpeed: 3000,
+					pauseOnHover: true,
+					enableResponsiveBreakpoints: true,
+					responsiveBreakpoints: {
+						portrait: {
+							changePoint: 480,
+							visibleItems: 1
+						},
+						landscape: {
+							changePoint: 640,
+							visibleItems: 2
+						},
+						tablet: {
+							changePoint: 768,
+							visibleItems: 3
+						}
+					}
+				});
+
+			});
+		</script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	</div>
+	<!-- start footer -->
+	<div class="footer_bg">
+		<div class="wrap">
+			<div class="footer">
+				<!-- start span_of_4 -->
+				<div class="span_of_4">
+					<div class="span1_of_4">
+						<h4>关于我的</h4>
+						<p>博观而约取，厚积而薄发 。—— 苏轼</p>
+						<ul class="f_nav1">
+							<li class="timer"><a href="#">2025一月16日 </a></li>
+						</ul>
+						<p class="top">暂无</p>
+						<ul class="f_nav1">
+							<li class="timer"><a href="#">-/-</a></li>
+						</ul>
+					</div>
+					<div class="span1_of_4">
+						<h4>tag</h4>
+						<p>高考加油<big>Minecraft</big>夜猫子<big>美术</big> 绘画<big>非洲酋长</big></p>
+					</div>
+					<div class="span1_of_4">
+						<h4>暂无</h4>
+						<p class="btm"></p>
+						<p>暂无</p>
+
+					</div>
+					<div class="span1_of_4">
+						<h4>暂无</h4>
+						<p class="btm">暂无</p>
+						<p class="btm1 pin">China,重庆</p>
+						<p class="btm1 mail"><a href="mailto:15215030859@163.com">15215030859@163.com（点击跳转）</a></p>
+						<p class="call">15215030859</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- start footer -->
+	<div class="footer_bg1">
+		<div class="wrap">
+			<div class="footer1">
+				<!-- scroll_top_btn -->
+				<script type="text/javascript">
+					$(document).ready(function () {
+
+						var defaults = {
+							containerID: 'toTop', // fading element id
+							containerHoverID: 'toTopHover', // fading element hover id
+							scrollSpeed: 1200,
+							easingType: 'linear'
+						};
+
+
+						$().UItoTop({ easingType: 'easeOutQuart' });
+
+					});
+				</script>
+				<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+				<!--end scroll_top_btn -->
+				<div class="social-icons">
+					<ul>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+						<li><a href="#" target="_blank"></a></li>
+					</ul>
+				</div>
+				|
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div style="display:none">
+		<script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script>
+	</div>
+</body>
+</html>

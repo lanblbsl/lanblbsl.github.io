@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #1c1c1c;
+  --text-height: 300px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.sparkle {
+  position: relative;
+  width: 600px;
+  height: var(--text-height);
+  font-size: 80px;
+  text-align: center;
+  line-height: var(--text-height);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 10px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* 星星绘制的原理：
+  本体是一个矩形，
+  然后在After伪类中，左向上偏移设定尺寸，上向上偏移设定尺寸，然后绘制一个圆形，并填充背景色。
+  接着绘制三个阴影，
+  这样就得到四个圆形，这四个圆形的圆心本别是本体的四角，这样中心就得到一个四角星的形状
+ */
+.star {
+  --star-size: 50px;
+  --star-life: 5s;
+
+  --start-left: 0px;
+  --start-top: 0px;
+
+  --end-left: 0px;
+  --end-top: 0px;
+
+  --star-color: #f1c40f;
+
+  position: absolute;
+  width: var(--star-size);
+  height: var(--star-size);
+  left: var(--end-left);
+  top: var(--end-top);
+  background: var(--star-color);
+  /* 设置色彩混合模式
+  lighten: 最终颜色是每个颜色通道下，顶底两层颜色中的最亮值所组成的颜色。
+  这里由于文字的颜色是白色，所以最亮色就是白色*/
+  mix-blend-mode: lighten;
+  animation: slide var(--star-life) ease-in forwards;
+}
+
+.star:after {
+  position: absolute;
+  content: "";
+  width: var(--star-size);
+  height: var(--star-size);
+  background-color: var(--bg);
+  border-radius: 100%;
+  top: calc(var(--star-size) / 2 * -1);
+  left: calc(var(--star-size) / 2 * -1);
+  box-shadow: var(--star-size) var(--star-size) var(--bg),
+    var(--star-size) 0px var(--bg), 0px var(--star-size) var(--bg);
+}
+
+@keyframes slide {
+  0% {
+    left: var(--start-left);
+    top: var(--start-top);
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    left: var(--end-left);
+    top: var(--end-top);
+    transform: rotate(calc(270deg * var(--star-life-num))) scale(0.5);
+    opacity: 1;
+  }
+}
